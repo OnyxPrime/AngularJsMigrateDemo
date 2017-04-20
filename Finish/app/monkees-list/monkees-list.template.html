@@ -1,0 +1,19 @@
+<div class="container_fluid">
+    <div class="row">
+        <div class="col-md-3" ng-repeat="monkee in $ctrl.monkees" class="thumbnail monkees-list-item">
+            <div class="container_fluid monkeeContent">
+                <div class="row">
+                    <a href="#!/monkees/{{::monkee.id}}">
+                        <img ng-src="{{::monkee.imageUrl}}" alt="{{::monkee.name}}" class="thumb"/>
+                    </a>
+                </div>
+                <div class="row">                    
+                    <a href="#!/monkees/{{::monkee.id}}" class="monkeeName">{{monkee.name}}</a>
+                </div>
+                <div class="row">
+                    <p>{{monkee.snippet}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
